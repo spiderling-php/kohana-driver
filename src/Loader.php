@@ -98,6 +98,6 @@ class Loader implements LoaderInterface
      */
     public function getCurrentUri()
     {
-        return $this->current->getUri();
+        return $this->current ? $this->current->getUri() : new Psr7\Uri('');
     }
 }

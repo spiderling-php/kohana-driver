@@ -60,6 +60,7 @@ class IntegrationTest extends PHPUnit_Framework_TestCase
 
         $this->assertEquals('Blog Index', $session->get('h1')->getText());
         $this->assertEquals('/blog', $session->get('meta[type="description"]')->getattribute('content'));
+        $this->assertEquals('/blog', (string) $session->getUri());
     }
 
     public function testRedirectLoop()
