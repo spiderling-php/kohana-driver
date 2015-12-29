@@ -1,0 +1,318 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1465e81b0b8638c9cf3e29600faa910e",
+    "content-hash": "31cb2c0f16979d9bb858cce42b7876fe",
+    "packages": [
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "dev-server-request",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivank/psr7.git",
+                "reference": "e1cc9b8b183e74016c0458e36ad76392520b91b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivank/psr7/zipball/e1cc9b8b183e74016c0458e36ad76392520b91b8",
+                "reference": "e1cc9b8b183e74016c0458e36ad76392520b91b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "support": {
+                "source": "https://github.com/ivank/psr7/tree/server-request"
+            },
+            "time": "2015-12-28 18:44:34"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        },
+        {
+            "name": "spiderling-php/crawler",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiderling-php/crawler.git",
+                "reference": "8e0606ea20b8dacde0c95f9e4c25379ce5be7a80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiderling-php/crawler/zipball/8e0606ea20b8dacde0c95f9e4c25379ce5be7a80",
+                "reference": "8e0606ea20b8dacde0c95f9e4c25379ce5be7a80",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/psr7": "dev-server-request as 1.3",
+                "spiderling-php/spiderling": "dev-master@dev"
+            },
+            "require-dev": {
+                "spiderling-php/phpunit-matches-selector": "^0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SP\\Crawler\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "SP\\Crawler\\Test\\": "tests/src/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Kerin",
+                    "email": "ikerin@gmail.com",
+                    "role": "Author"
+                }
+            ],
+            "description": "A backbone for static spiderling crawlers",
+            "support": {
+                "source": "https://github.com/spiderling-php/crawler/tree/master",
+                "issues": "https://github.com/spiderling-php/crawler/issues"
+            },
+            "time": "2015-12-29 14:16:31"
+        },
+        {
+            "name": "spiderling-php/spiderling",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiderling-php/spiderling.git",
+                "reference": "9e3cb6642ba8a2ff6b546c7da66529dac368e3cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiderling-php/spiderling/zipball/9e3cb6642ba8a2ff6b546c7da66529dac368e3cd",
+                "reference": "9e3cb6642ba8a2ff6b546c7da66529dac368e3cd",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/psr7": "^1.0",
+                "symfony/css-selector": "^2.3"
+            },
+            "require-dev": {
+                "spiderling-php/phpunit-matches-selector": "^0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SP\\Spiderling\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Kerin",
+                    "email": "ikerin@gmail.com",
+                    "role": "Author"
+                }
+            ],
+            "description": "Browser emulator, for crawling web pages",
+            "time": "2015-12-28 12:21:42"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v2.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "eaa3320e32f09a01dc432c6efbe8051aee59cfef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/eaa3320e32f09a01dc432c6efbe8051aee59cfef",
+                "reference": "eaa3320e32f09a01dc432c6efbe8051aee59cfef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-12-05 17:37:59"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "openbuildings/kohana-test-bootsrap",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpenBuildings/kohana-test-bootstrap.git",
+                "reference": "57c9cae9bd97edbe58d1c41c35c499c7d54f4030"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpenBuildings/kohana-test-bootstrap/zipball/57c9cae9bd97edbe58d1c41c35c499c7d54f4030",
+                "reference": "57c9cae9bd97edbe58d1c41c35c499c7d54f4030",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Kerin",
+                    "email": "ivan@openbuildings.com",
+                    "homepage": "https://github.com/OpenBuildings/jam",
+                    "role": "Author"
+                }
+            ],
+            "description": "Kohana core classes repackaged with composer, used to test modules",
+            "time": "2013-10-01 08:57:54"
+        }
+    ],
+    "aliases": [
+        {
+            "alias": "1.3",
+            "alias_normalized": "1.3.0.0",
+            "version": "dev-server-request",
+            "package": "guzzlehttp/psr7"
+        }
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "spiderling-php/crawler": 20,
+        "spiderling-php/spiderling": 20,
+        "guzzlehttp/psr7": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
