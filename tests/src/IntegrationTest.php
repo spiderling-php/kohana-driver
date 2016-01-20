@@ -3,7 +3,8 @@
 namespace SP\KohanaDriver\Test;
 
 use PHPUnit_Framework_TestCase;
-use SP\KohanaDriver\Session;
+use SP\KohanaDriver\Crawler;
+use SP\Spiderling\CrawlerSession;
 
 /**
  * @covers SP\KohanaDriver\Loader
@@ -12,7 +13,7 @@ class IntegrationTest extends PHPUnit_Framework_TestCase
 {
     public function testIndex()
     {
-        $session = new Session();
+        $session = new CrawlerSession(new Crawler());
 
         $session->open('/blog');
 
@@ -23,7 +24,7 @@ class IntegrationTest extends PHPUnit_Framework_TestCase
 
     public function testTraverse()
     {
-        $session = new Session();
+        $session = new CrawlerSession(new Crawler());
 
         $session->open('/blog');
         $session->clickLink('Next Post');
@@ -36,7 +37,7 @@ class IntegrationTest extends PHPUnit_Framework_TestCase
 
     public function testForm()
     {
-        $session = new Session();
+        $session = new CrawlerSession(new Crawler());
 
         $session->open('/blog/next-post');
         $session
@@ -55,7 +56,7 @@ class IntegrationTest extends PHPUnit_Framework_TestCase
 
     public function testRedirect()
     {
-        $session = new Session();
+        $session = new CrawlerSession(new Crawler());
         $session->open('/old-blog');
 
         $this->assertEquals('Blog Index', $session->get('h1')->getText());
@@ -67,7 +68,7 @@ class IntegrationTest extends PHPUnit_Framework_TestCase
     {
         $this->setExpectedException('LogicException', 'Maximum Number of redirects (5) for url /redirect-loop');
 
-        $session = new Session();
+        $session = new CrawlerSession(new Crawler());
         $session->open('/redirect-loop');
     }
 }
