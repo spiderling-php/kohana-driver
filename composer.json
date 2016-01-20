@@ -33,9 +33,9 @@
         }
     },
     "autoload-dev": {
+        "files": ["tests/module/autoload.php"],
         "psr-4": {
             "SP\\KohanaDriver\\Test\\": "tests/src/"
-        },
-        "files": ["tests/module/autoload.php"]
+        }
     }
 }

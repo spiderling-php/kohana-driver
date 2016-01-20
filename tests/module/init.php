@@ -1,11 +1,5 @@
 <?php
 
-error_reporting(E_ALL ^ E_NOTICE);
-
-Kohana::$caching = false;
-
-$_SERVER['HTTP_HOST'] = '127.0.0.1';
-
 Route::set('blog', 'blog')
     ->defaults([
         'controller' => 'blog',

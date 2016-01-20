@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1465e81b0b8638c9cf3e29600faa910e",
+    "hash": "84581d54b8229003d0d6a02f8bec4579",
     "content-hash": "31cb2c0f16979d9bb858cce42b7876fe",
     "packages": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivank/psr7.git",
-                "reference": "e1cc9b8b183e74016c0458e36ad76392520b91b8"
+                "reference": "f494712cc9052959998c151e36ee31c229dc6496"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivank/psr7/zipball/e1cc9b8b183e74016c0458e36ad76392520b91b8",
-                "reference": "e1cc9b8b183e74016c0458e36ad76392520b91b8",
+                "url": "https://api.github.com/repos/ivank/psr7/zipball/f494712cc9052959998c151e36ee31c229dc6496",
+                "reference": "f494712cc9052959998c151e36ee31c229dc6496",
                 "shasum": ""
             },
             "require": {
@@ -65,7 +65,7 @@
             "support": {
                 "source": "https://github.com/ivank/psr7/tree/server-request"
             },
-            "time": "2015-12-28 18:44:34"
+            "time": "2016-01-08 13:18:15"
         },
         {
             "name": "psr/http-message",
@@ -171,12 +171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiderling-php/spiderling.git",
-                "reference": "9e3cb6642ba8a2ff6b546c7da66529dac368e3cd"
+                "reference": "bfbd28a2f538c01a53373feed7854f92b6a2bd68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiderling-php/spiderling/zipball/9e3cb6642ba8a2ff6b546c7da66529dac368e3cd",
-                "reference": "9e3cb6642ba8a2ff6b546c7da66529dac368e3cd",
+                "url": "https://api.github.com/repos/spiderling-php/spiderling/zipball/bfbd28a2f538c01a53373feed7854f92b6a2bd68",
+                "reference": "bfbd28a2f538c01a53373feed7854f92b6a2bd68",
                 "shasum": ""
             },
             "require": {
@@ -204,20 +204,20 @@
                 }
             ],
             "description": "Browser emulator, for crawling web pages",
-            "time": "2015-12-28 12:21:42"
+            "time": "2016-01-20 10:04:21"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "eaa3320e32f09a01dc432c6efbe8051aee59cfef"
+                "reference": "ac06d8173bd80790536c0a4a634a7d705b91f54f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/eaa3320e32f09a01dc432c6efbe8051aee59cfef",
-                "reference": "eaa3320e32f09a01dc432c6efbe8051aee59cfef",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ac06d8173bd80790536c0a4a634a7d705b91f54f",
+                "reference": "ac06d8173bd80790536c0a4a634a7d705b91f54f",
                 "shasum": ""
             },
             "require": {
@@ -257,7 +257,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-05 17:37:59"
+            "time": "2016-01-03 15:33:41"
         }
     ],
     "packages-dev": [
