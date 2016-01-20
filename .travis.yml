@@ -15,6 +15,7 @@ cache:
 
 before_install:
   - composer selfupdate
+  - composer config -g github-oauth.github.com $GITHUB_TOKEN
 
 install:
   - composer install
